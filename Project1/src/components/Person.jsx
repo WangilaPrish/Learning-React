@@ -1,19 +1,20 @@
 const Person = () => {
     return (
-        <Pep 
-        user="Prish" 
-        age="23" 
+        <User
+            name='Prish'
+            age= '22'
         />
     );
 };
 
-const Pep = ({ user, age }) => {
+const User = ({ name, age }) => {
     return (
         <div>
-            <h1>Name: {user}</h1>
+            <h1>Name: {name}</h1>
             <p>Age: {age}</p>
         </div>
     );
 };
+
 
 export default Person;
