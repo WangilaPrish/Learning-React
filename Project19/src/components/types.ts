@@ -3,3 +3,7 @@ export type Info = {
     name: string;
     email: string;
 }
+export type AdminInfoList = Info & {
+    role: string;
+    permissions: string[];
+};

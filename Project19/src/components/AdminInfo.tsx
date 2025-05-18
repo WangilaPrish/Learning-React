@@ -1,15 +1,17 @@
-import type { Info } from './types'
-import type { FC } from 'react';
+import React from "react";
+import type { AdminInfoList } from "./types";
 
-const AdminInfo: FC<Info> = ({ name, email, id }) => {
+const AdminInfo: React.FC<AdminInfoList> = ({ id, name, email, role, permissions }) => {
     return (
         <div>
-            <h1>Admin Info</h1>
+            <h3>Admin Info:</h3>
+            <p>ID: {id}</p>
             <p>Name: {name}</p>
             <p>Email: {email}</p>
-            <p>ID: {id}</p>
+            <p>Role: {role}</p>
+            <p>Permissions: {permissions.join(", ")}</p>
         </div>
-    )
-}
+    );
+};
 
-export default AdminInfo
+export default AdminInfo;
