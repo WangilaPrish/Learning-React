@@ -14,7 +14,7 @@ const FetchDataEffect = () => {
         }
       })
       .catch((err) => console.error('Error fetching posts:', err));
-  }, []);
+  }, [title]);
 
   return (
     <div>
