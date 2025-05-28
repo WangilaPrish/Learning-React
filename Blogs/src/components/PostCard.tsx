@@ -9,7 +9,7 @@ interface PostCardProps {
     onReadMore: () => void;
 }
 
-export default function PostCard({ title, excerpt, fullText, onReadMore }: PostCardProps) {
+export default function PostCard({ title, excerpt, onReadMore }: PostCardProps) {
     return (
         <Card className="bg-white shadow hover:shadow-lg transition rounded-xl">
             <CardContent className="p-6">

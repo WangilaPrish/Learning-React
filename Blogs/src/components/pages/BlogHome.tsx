@@ -29,6 +29,30 @@ const posts = [
         fullText:
             "React is a UI library, while Next.js is a framework built on top of React that adds server-side rendering, routing, and API routes out of the box. If you’re building a single-page app (SPA), React is enough. But for SEO-friendly apps, blogs, eCommerce, or dashboards, Next.js offers built-in performance optimization and routing. In 2025, most production React apps are better off being built with Next.js.",
     },
+    {
+        id: 4,
+        title: "The Case for Component-Driven Development",
+        excerpt:
+            "Component-driven development breaks down the UI into reusable pieces. It’s the backbone of modern frontend architecture.",
+        fullText:
+            "Component-driven development (CDD) treats every element of your UI as an isolated, testable component. This approach enables faster iteration, easier debugging, and a more maintainable codebase. Tools like Storybook and design systems like Radix or ShadCN are built around this principle. CDD isn’t just a frontend fad — it's the foundation of scalable React apps.",
+    },
+    {
+        id: 5,
+        title: "Using GitHub Actions for CI/CD in React Projects",
+        excerpt:
+            "CI/CD automation improves your workflow. Learn how GitHub Actions can streamline deployment of React apps.",
+        fullText:
+            "GitHub Actions allows you to automate your build, test, and deployment pipelines directly from your repository. For React apps, you can automatically lint and test your code on every push, then deploy to services like Vercel, Netlify, or even a VPS using SSH. It's secure, fast, and helps enforce consistent deployment practices across teams.",
+    },
+    {
+        id: 6,
+        title: "Understanding useEffect and useLayoutEffect in React",
+        excerpt:
+            "Confused about when to use useEffect vs useLayoutEffect? Here's what you need to know.",
+        fullText:
+            "useEffect and useLayoutEffect are two powerful hooks in React that run after component render. The key difference: useLayoutEffect runs synchronously after all DOM mutations, blocking paint, while useEffect runs asynchronously. If you need to measure layout or make visual changes before paint, useLayoutEffect. For data fetching or subscriptions, useEffect is preferred.",
+    }
 ];
 
 export default function BlogHome() {
