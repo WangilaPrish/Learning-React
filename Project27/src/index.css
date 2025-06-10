@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    content: center;
+}
+.button{
+    font-size: 120px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering (optional) */
+    min-height: 100vh;        /* fill viewport height (optional) */
+}
