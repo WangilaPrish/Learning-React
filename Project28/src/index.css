@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container{
+    font-size: 120px;
+    font-weight: bold;
+    color: black;
+    background-color: black;
+    padding: 10px 10px;
+    margin-top: 70px;
+    text-align: center;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering (optional) */
+    min-height: 30vh;
+    width: 70vh;        /* fill viewport height (optional) */
+    margin: 0 auto; /* center horizontally */
+}
+
+.title{
+    color: black;
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    content: center;
+}
