@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.button{
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #4a90e2;
+}
+.title{
+    color: black;
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    content: center;
+}
