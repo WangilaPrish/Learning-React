@@ -19,6 +19,8 @@ const data = [
     { title: 'What is Docker?', content: 'A platform for developing, shipping, and running applications in containers.' },
     { title: 'What is Kubernetes?', content: 'An open-source system for automating deployment, scaling, and management of containerized applications.' },
     { title: 'What is GraphQL?', content: 'A query language for APIs and a runtime for executing those queries with your existing data.' },
+    { title: 'What is Webpack?', content: 'A static module bundler for modern JavaScript applications.' },
+    { title: 'What is Babel?', content: 'A JavaScript compiler that allows you to use next generation JavaScript, today.' },
 
 ];
 
