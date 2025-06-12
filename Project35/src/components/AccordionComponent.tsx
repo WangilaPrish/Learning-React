@@ -10,6 +10,9 @@ const data = [
     { title: 'What is TypeScript?', content: 'A typed superset of JavaScript that compiles to plain JavaScript.' },
     { title: 'What is Next.js?', content: 'A React framework for building server-side rendered applications.' },
     { title: 'What is Redux?', content: 'A predictable state container for JavaScript apps.' },
+    { title: 'What is GraphQL?', content: 'A query language for APIs and a runtime for executing those queries.' },
+    { title: 'What is Node.js?', content: 'A JavaScript runtime built on Chrome\'s V8 engine.' },
+    { title: 'What is Express?', content: 'A minimal and flexible Node.js web application framework.' }
 
 ];
 
