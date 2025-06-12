@@ -15,6 +15,11 @@ const data = [
     { title: 'What is Express?', content: 'A minimal and flexible Node.js web application framework.' },
     { title: 'What is MongoDB?', content: 'A NoSQL database that uses a document-oriented data model.' },
     { title: 'What is PostgreSQL?', content: 'A powerful, open source object-relational database system.' },
+    { title: 'What is MySQL?', content: 'An open-source relational database management system.' },
+    { title: 'What is Docker?', content: 'A platform for developing, shipping, and running applications in containers.' },
+    { title: 'What is Kubernetes?', content: 'An open-source system for automating deployment, scaling, and management of containerized applications.' },
+    { title: 'What is GraphQL?', content: 'A query language for APIs and a runtime for executing those queries with your existing data.' },
+
 ];
 
 interface AccordionItemProps {
