@@ -5,6 +5,9 @@ import { useState } from 'react';
 const data = [
     { title: 'What is React?', content: 'React is a JS library for building UIs.' },
     { title: 'What is Framer Motion?', content: 'It is a motion library for React.' },
+    { title: 'What is Tailwind CSS?', content: 'A utility-first CSS framework for rapid UI development.' },
+    { title: 'What is Vite?', content: 'A fast build tool and development server for modern web projects.' },
+    { title: 'What is TypeScript?', content: 'A typed superset of JavaScript that compiles to plain JavaScript.' },
 ];
 
 interface AccordionItemProps {
@@ -14,11 +17,14 @@ interface AccordionItemProps {
 const AccordionItem = ({ title, content }: AccordionItemProps) => {
     const [isOpen, setIsOpen] = useState(false);
 
+    const openAccordion = () => {
+        setIsOpen(!isOpen);
+    }
     return (
         <div className="border-b border-gray-300">
             <button
                 className="w-full text-left px-4 py-3 font-semibold text-lg hover:bg-gray-100 transition"
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={openAccordion}
             >
                 {title}
             </button>
