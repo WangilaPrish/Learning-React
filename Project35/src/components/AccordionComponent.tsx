@@ -14,7 +14,7 @@ const data = [
     { title: 'What is Node.js?', content: 'A JavaScript runtime built on Chrome\'s V8 engine.' },
     { title: 'What is Express?', content: 'A minimal and flexible Node.js web application framework.' },
     { title: 'What is MongoDB?', content: 'A NoSQL database that uses a document-oriented data model.' },
-    {}
+    { title: 'What is PostgreSQL?', content: 'A powerful, open source object-relational database system.' },
 ];
 
 interface AccordionItemProps {
