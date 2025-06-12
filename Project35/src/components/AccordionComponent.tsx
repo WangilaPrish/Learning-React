@@ -8,6 +8,9 @@ const data = [
     { title: 'What is Tailwind CSS?', content: 'A utility-first CSS framework for rapid UI development.' },
     { title: 'What is Vite?', content: 'A fast build tool and development server for modern web projects.' },
     { title: 'What is TypeScript?', content: 'A typed superset of JavaScript that compiles to plain JavaScript.' },
+    { title: 'What is Next.js?', content: 'A React framework for building server-side rendered applications.' },
+    { title: 'What is Redux?', content: 'A predictable state container for JavaScript apps.' },
+
 ];
 
 interface AccordionItemProps {
