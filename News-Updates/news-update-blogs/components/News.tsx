@@ -20,11 +20,13 @@ const News = ({ date, title, description, image }: NewsProps) => {
 
             {/* Content */}
             <div className="absolute inset-0 p-6 flex flex-col justify-end text-white z-10 font-serif">
+                <span className="text-sm text-gray-300">{date}</span>
                 <h2 className="text-xl font-bold">{title}</h2>
+
 
                 {/* Hidden content revealed on hover */}
                 <div className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 space-y-2">
-                    <span className="text-sm text-gray-300">{date}</span>
+
                     <p className="text-sm">{description}</p>
 
                     <div className="grid grid-cols-2 gap-2 mt-3">
