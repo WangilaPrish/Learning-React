@@ -1,22 +1,22 @@
-'use client';
 
-import { Share2 } from 'lucide-react';
+import { Share2 } from 'lucide-react'; // Lucide icon (you can use any icon library)
 
 interface NewsProps {
+    date: string;
     title: string;
     description: string;
-    date: string;
-    image: string;
+    image: string; // URL to image
 }
 
-const News = ({ title, description, date, image }: NewsProps) => {
+
+const News = ({ date, title, description, image }: NewsProps) => {
     return (
         <div
-            className="relative w-[300px] h-[400px] rounded-2xl overflow-hidden bg-cover bg-center shadow-md border border-gray-300 group"
+            className="relative w-95 h-90 rounded-2xl bg-slate-50 overflow-hidden bg-cover bg-center shadow-md border border-gray-300 group transition-all duration-300"
             style={{ backgroundImage: `url(${image})` }}
         >
             {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div className="absolute inset-0 bg-opacity-40"></div>
 
             {/* Content */}
             <div className="absolute inset-0 p-6 flex flex-col justify-end text-white z-10 font-serif">
