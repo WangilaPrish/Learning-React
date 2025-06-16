@@ -7,7 +7,7 @@ const page = () => {
     return (
         <div>
             <section
-                className="min-h-[40vh] flex flex-col items-center justify-center text-center px-4 my-13 font-serif"
+                className="min-h-[30vh] flex flex-col items-center justify-center text-center px-4 my-13 font-serif"
                 style={{ backgroundColor: "a2d2ff" }} // ✅ added the "#" to the color
             >
                 <h1 className="text-4xl font-bold mb-4">Latest News Updates</h1>
@@ -32,7 +32,7 @@ const page = () => {
                 <News
                     title="Smart Cities of the Future"
                     date="2025-06-12"
-                    description="A look at AI-powered city infrastructure in 2035."
+                    description="A look at AI-powered city infrastructure in 2035 as envisioned by experts."
                     image="/assets/pexels-tara-winstead-8386364.jpg"
                 />
             </div>

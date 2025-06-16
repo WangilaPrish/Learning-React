@@ -1,5 +1,6 @@
 
 import { Share2 } from 'lucide-react'; // Lucide icon (you can use any icon library)
+import { motion } from 'framer-motion'; // For animations
 
 interface NewsProps {
     date: string;
@@ -19,26 +20,29 @@ const News = ({ date, title, description, image }: NewsProps) => {
             <div className="absolute inset-0 bg-opacity-40"></div>
 
             {/* Content */}
-            <div className="absolute inset-0 p-6 flex flex-col justify-end text-white z-10 font-serif">
+            <motion.div
+                initial={{ opacity: 1, y: 115 }}
+                whileHover={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.3 }}
+                className="absolute inset-0 p-6 flex flex-col justify-end text-white z-10 font-serif"
+            >
                 <span className="text-sm text-gray-300">{date}</span>
-                <h2 className="text-xl font-bold">{title}</h2>
+                <h2 className="text-xl font-bold mb-5">{title}</h2>
 
-
-                {/* Hidden content revealed on hover */}
-                <div className="opacity-0 group-hover:opacity-100 transition duration-300 mt-2 space-y-2">
-
+                <div
+                    className="space-y-2">
                     <p className="text-sm">{description}</p>
 
-                    <div className="grid grid-cols-2 gap-2 mt-3">
-                        <button className="bg-white text-black text-sm py-1 px-3 cursor-pointer rounded hover:bg-gray-200">
+                    <div className="grid grid-cols-2 gap-1 mt-3">
+                        <button className="outline-1 text-black text-sm py-1 px-3 cursor-pointer rounded-2xl hover:bg-gray-200 w-2/3">
                             Read More
                         </button>
-                        <button className="bg-white text-black p-2 rounded flex justify-center cursor-pointer items-center hover:bg-gray-200">
+                        <button className="text-black outline-1 p-2 rounded-2xl flex justify-center cursor-pointer items-center hover:bg-gray-200 w-2/3">
                             <Share2 size={18} />
                         </button>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 };
