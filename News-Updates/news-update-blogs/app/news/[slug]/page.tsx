@@ -29,7 +29,7 @@ const newsData: NewsItem[] = [
                 As climate - tech garners growing investor attention, startups like Pano AI are redefining how we approach disaster mitigation.Their success signals a broader trend: the rise of AI - driven, purpose - built startups that solve complex global challenges.With continued funding and rapid deployment, these startups are proving that tech can be both profitable and planet - positive.
             </p>,
         relatedNews:
-            <Link href="{`/news/${slug}`}">Discover how AI is transforming disaster response and climate resilience.</Link>
+            <Link href="news/clean}">Discover how AI is transforming disaster response and climate resilience.</Link>
 
     },
     {
