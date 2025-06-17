@@ -7,16 +7,16 @@ const page = () => {
     return (
         <div>
             <section
-                className="min-h-[30vh] flex flex-col items-center justify-center text-center px-4 my-13 font-serif"
-                style={{ backgroundColor: "a2d2ff" }} // ✅ added the "#" to the color
+                className="min-h-[30vh] flex flex-col items-center justify-center text-center px-4 py-10 md:py-16 font-serif"
+                style={{ backgroundColor: "#a2d2ff" }}
             >
-                <h1 className="text-4xl font-bold mb-4">Latest News Updates</h1>
-                <p className="text-lg text-gray-700 max-w-xl">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Latest News Updates</h1>
+                <p className="text-base md:text-lg text-gray-700 max-w-xl">
                     Stay updated with the latest news in technology, business, and innovation.
                 </p>
             </section>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-6 lg:px-12">
                 <News
                     index={0}
                     slug="tech-startups-to-watch"
@@ -41,9 +41,7 @@ const page = () => {
                     description="A look at AI-powered city infrastructure in 2035 as envisioned by experts."
                     image="/assets/pexels-tara-winstead-8386364.jpg"
                 />
-
             </div>
-
         </div>
     );
 };
