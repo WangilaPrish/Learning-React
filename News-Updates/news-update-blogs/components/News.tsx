@@ -32,7 +32,7 @@ const News = ({ date, title, description, image, slug }: NewsProps) => {
                     <p className="text-sm">{description}</p>
 
                     <div className="grid grid-cols-2 gap-1 mt-3">
-                        <Link href={`/NewsPage/${slug}`}>
+                        <Link href={`/news/${slug}`}>
                             <button className="outline-1 text-black text-sm py-1 px-3 rounded-2xl cursor-pointer hover:bg-gray-200 w-2/3">
                                 Read More
                             </button>
