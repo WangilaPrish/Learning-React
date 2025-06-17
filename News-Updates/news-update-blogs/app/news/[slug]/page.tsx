@@ -1,4 +1,5 @@
 import NewsDetail from '@/components/NewsDetail';
+import Link from 'next/link';
 
 import { ReactNode } from 'react';
 
@@ -16,7 +17,7 @@ const newsData: NewsItem[] = [
         slug: 'tech-startups-to-watch',
         title: 'Tech Startups to Watch',
         date: '2025-06-14',
-        image: '/assets/pexels-tara-winstead-8386364.jpg',
+        image: '/assets/unnamed.jpg',
         fullContent:
             <p>
                 In a world increasingly vulnerable to climate change, a new breed of tech startups is harnessing AI to combat environmental crises. Among the frontrunners is Pano AI, a San Francisco-based company that recently raised $44 million in Series B funding. Their mission: to detect wildfires before they spiral out of control. Using high- definition cameras, AI - powered risk modeling, and real - time alert systems, Pano is already monitoring over 30 million acres across the United States, Australia, and Canada.
@@ -27,7 +28,9 @@ const newsData: NewsItem[] = [
                 <br />
                 As climate - tech garners growing investor attention, startups like Pano AI are redefining how we approach disaster mitigation.Their success signals a broader trend: the rise of AI - driven, purpose - built startups that solve complex global challenges.With continued funding and rapid deployment, these startups are proving that tech can be both profitable and planet - positive.
             </p>,
-        relatedNews: 'Discover how AI is transforming disaster response and climate resilience.',
+        relatedNews:
+            <Link href="{`/news/${slug}`}">Discover how AI is transforming disaster response and climate resilience.</Link>
+
     },
     {
         slug: 'clean-energy-boom',

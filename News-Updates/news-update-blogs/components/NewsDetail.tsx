@@ -2,6 +2,9 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion'
+
+
 
 interface NewsDetailProps {
     title: string;
@@ -12,6 +15,7 @@ interface NewsDetailProps {
 }
 
 const NewsDetail = ({ title, date, image, fullContent, relatedNews }: NewsDetailProps) => {
+
     return (
         <div>
             <h1 className="text-3xl md:text-4xl font-bold m-7 font-serif text-center">{title}</h1>
@@ -36,7 +40,10 @@ const NewsDetail = ({ title, date, image, fullContent, relatedNews }: NewsDetail
                 {/* Right column – 1/3 */}
                 <div className="bg-gray-100 rounded-lg p-4">
                     <h2 className="text-xl font-bold mb-2">Related News</h2>
-                    <p className="text-sm text-black">{relatedNews}</p>
+                    <motion.p
+                        whileHover={{ scale: 1.02, color: '#1d4ed8' }}
+                        className="text-sm text-black">{relatedNews}
+                    </motion.p>
                 </div>
             </div>
         </div>
