@@ -18,23 +18,30 @@ const page = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
                 <News
+                    index={0}
+                    slug="tech-startups-to-watch"
                     title="Tech Startups to Watch"
                     date="2025-06-14"
                     description="These 3 startups are turning heads with groundbreaking innovation."
                     image="/assets/pexels-tara-winstead-8386364.jpg"
                 />
                 <News
+                    index={1}
+                    slug="clean-energy-boom"
                     title="Clean Energy Boom"
                     date="2025-06-13"
                     description="How solar and wind are leading the next energy wave."
                     image="/assets/pexels-tara-winstead-8386364.jpg"
                 />
                 <News
+                    index={2}
+                    slug="smart-cities-future"
                     title="Smart Cities of the Future"
                     date="2025-06-12"
                     description="A look at AI-powered city infrastructure in 2035 as envisioned by experts."
                     image="/assets/pexels-tara-winstead-8386364.jpg"
                 />
+
             </div>
 
         </div>
