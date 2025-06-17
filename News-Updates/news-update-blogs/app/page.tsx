@@ -16,7 +16,8 @@ const page = () => {
                 </p>
             </section>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-6 lg:px-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-10 px-4 sm:px-6 lg:px-12 py-6">
+
                 <News
                     index={0}
                     slug="tech-startups-to-watch"
