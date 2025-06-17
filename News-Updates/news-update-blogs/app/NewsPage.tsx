@@ -1,4 +1,3 @@
-// app/news/[slug]/page.tsx
 import NewsDetail from '@/components/NewsDetail';
 
 interface NewsItem {
@@ -10,7 +9,6 @@ interface NewsItem {
 }
 
 const newsData: NewsItem[] = [
-
     {
         slug: 'tech-startups-to-watch',
         title: 'Tech Startups to Watch',
@@ -43,16 +41,12 @@ const NewsDetailsPage = ({ params }: { params: { slug: string } }) => {
     if (!article) return <div className="p-6 text-center">Article not found.</div>;
 
     return (
-        <div className="max-w-4xl mx-auto p-6 font-serif">
-            <h1 className="text-3xl font-bold mb-2">{article.title}</h1>
-            <p className="text-gray-500 mb-4">{article.date}</p>
-            <image
-                src={article.image}
-                alt={article.title}
-                className="rounded-lg mb-6 w-full max-h-[400px] object-cover"
-            />
-            <p className="text-lg leading-relaxed">{article.fullContent}</p>
-        </div>
+        <NewsDetail
+            title={article.title}
+            date={article.date}
+            image={article.image}
+            fullContent={article.fullContent}
+        />
     );
 };
 
