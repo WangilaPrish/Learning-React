@@ -13,7 +13,7 @@ const FadeComponent = () => {
             <motion.div>
                 <motion.h1
                     initial={{ opacity: 1 }}
-                    animate={{ opacity: 2 }}
+                    animate={{ opacity: fade ? 1 : 0 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 2 }}
                     className="text-3xl font-bold mb-4"
