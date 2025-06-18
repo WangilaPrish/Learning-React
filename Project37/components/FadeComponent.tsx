@@ -1,21 +1,32 @@
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const FadeComponent = () => {
+
+    const [fade, setFade] = useState(true);
+
+    const handleClick = () => {
+        setFade(!fade);
+    };
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-900">
-            <div className="flex flex-col items-center gap-4">
-                <motion.div
-                    initial={{ opacity: 2, scale: 1 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    className="w-32 h-32 bg-white rounded-full shadow-md">
-                </motion.div>
-                <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-                    Click me for Magic!
-                </button>
-            </div>
+        <div>
+            <motion.div>
+                <motion.h1
+                    initial={{ opacity: 1 }}
+                    animate={{ opacity: 2 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 2 }}
+                    className="text-3xl font-bold mb-4"
+                >
+                    Welcome to the Magic of Framer Motion!
+                </motion.h1>
+            </motion.div>
+            <button
+                onClick={handleClick}
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                Click me for Magic!
+            </button>
         </div>
-
-
     )
 }
 
