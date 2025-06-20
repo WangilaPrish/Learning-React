@@ -16,7 +16,7 @@ const FadeComponent = () => {
                     animate={{ opacity: fade ? 1 : 0 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 2 }}
-                    className="text-3xl font-bold mb-4"
+                    className="text-3xl font-bold mb-4 bg-teal-500 text-white p-4 rounded shadow-lg"
                 >
                     Welcome to the Magic of Framer Motion!
                 </motion.h1>
