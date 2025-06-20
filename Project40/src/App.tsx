@@ -1,8 +1,11 @@
 import React from 'react'
+import PulsatingButton from './components/PulsatingButton'
 
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <PulsatingButton />
+        </div>
     )
 }
 

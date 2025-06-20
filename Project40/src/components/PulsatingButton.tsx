@@ -1,8 +1,15 @@
-import React from 'react'
+import { motion } from 'framer-motion';
 
 const PulsatingButton = () => {
     return (
-        <div>PulsatingButton</div>
+        <div>
+            <div>
+
+            </div>
+            <motion.button>
+
+            </motion.button>
+        </div>
     )
 }
 
