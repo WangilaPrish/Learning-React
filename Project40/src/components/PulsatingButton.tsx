@@ -12,8 +12,17 @@ const PulsatingButton = () => {
                 <br />
                 In my community, you'd never be bored as i give you juicy tea.
             </div>
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-center m-20">
                 <motion.button
+                    initial={{ scale: 1, opacity: 1 }}
+                    animate={{ scale: 2, opacity: 0.5 }}
+                    transition={{
+                        duration: 1,
+                        repeat: Infinity,
+                        repeatType: 'reverse',
+                        ease: 'easeInOut',
+
+                    }}
                     className="bg-blue-500 text-white px-6 py-3 rounded-full"
                 >
                     Subscribe
