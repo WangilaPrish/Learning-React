@@ -1,4 +1,4 @@
-import BouncingBall from '../components/BouncingBall'
+import BouncingBall from './components/BouncingBall'
 
 const App = () => {
     return (
