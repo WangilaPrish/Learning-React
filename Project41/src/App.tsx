@@ -1,8 +1,11 @@
+import ColorChange from "./components/ColorChange"
 
 
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <ColorChange />
+        </div>
     )
 }
 
