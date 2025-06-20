@@ -1,8 +1,12 @@
-
+import { motion } from 'framer-motion';
 
 const SlidingText = () => {
     return (
-        <div>SlidingText</div>
+        <div>
+            <motion.div>
+
+            </motion.div>
+        </div>
     )
 }
 
