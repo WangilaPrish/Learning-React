@@ -12,11 +12,14 @@ const PulsatingButton = () => {
                 <br />
                 In my community, you'd never be bored as i give you juicy tea.
             </div>
-            <motion.button
-                className='bg-blue-500 text-white px-6 py-3 rounded-full m-20 items-center flex'
-            >
-                Subscribe
-            </motion.button>
+            <div className="flex justify-center mt-10">
+                <motion.button
+                    className="bg-blue-500 text-white px-6 py-3 rounded-full"
+                >
+                    Subscribe
+                </motion.button>
+            </div>
+
         </div>
     )
 }
