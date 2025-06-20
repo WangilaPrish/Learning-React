@@ -4,7 +4,10 @@ const SlidingText = () => {
     return (
         <div>
             <motion.div>
-
+                <p>Are you seeing me sliding in?
+                    <br />
+                    Lol :)
+                </p>
             </motion.div>
         </div>
     )
