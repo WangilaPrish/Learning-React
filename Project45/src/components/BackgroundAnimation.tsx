@@ -2,14 +2,10 @@ import { motion } from 'framer-motion';
 
 const BackgroundAnimation = () => {
     return (
-        <div>
-            <motion.div
-                className='bg-neutral-900 h-full w-full '
-            >
+        <motion.div
+            className='w-screen h-screen animate-bgColorChange'
+        />
+    );
+};
 
-            </motion.div>
-        </div>
-    )
-}
-
-export default BackgroundAnimation
+export default BackgroundAnimation;
