@@ -1,8 +1,11 @@
+import BackgroundAnimation from "./components/BackgroundAnimation"
 
 
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <BackgroundAnimation />
+        </div>
     )
 }
 
