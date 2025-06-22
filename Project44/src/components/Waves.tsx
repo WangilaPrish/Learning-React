@@ -1,8 +1,12 @@
-import React from 'react'
+import { motion } from 'framer-motion';
 
 const Waves = () => {
     return (
-        <div>Waves</div>
+        <div>
+            <motion.div>
+
+            </motion.div>
+        </div>
     )
 }
 
