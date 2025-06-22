@@ -1,8 +1,10 @@
-
+import SimpleFadeIn from "./components/simpleFadeIn"
 
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <SimpleFadeIn />
+        </div>
     )
 }
 
