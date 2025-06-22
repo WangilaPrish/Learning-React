@@ -1,8 +1,11 @@
+import Waves from "./components/Waves"
 
 
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <Waves />
+        </div>
     )
 }
 
