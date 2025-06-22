@@ -1,8 +1,12 @@
-
+import { motion } from 'framer-motion';
 
 const NavigationMenu = () => {
     return (
-        <div>NavigationMenu</div>
+        <div>
+            <motion.div>
+
+            </motion.div>
+        </div>
     )
 }
 
