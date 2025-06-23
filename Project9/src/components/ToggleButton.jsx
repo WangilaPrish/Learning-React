@@ -12,7 +12,7 @@ const ToggleButton = () => {
                 setBackgroundColor(backgroundColor === 'black' ? 'white' : 'black')
                 setTextColor(textColor === 'white' ? 'black' : 'white')
                 setButtonColor(buttonColor === 'red' ? 'white' : 'red')
-            }}>Click mvegvbnerh</button>
+            }}>Click me</button>
       </div>
   )
 }
