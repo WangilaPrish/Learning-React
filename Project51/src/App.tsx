@@ -1,8 +1,11 @@
+import DynamicList from "./components/DynamicList"
 
 
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <DynamicList />
+        </div>
     )
 }
 

@@ -1,8 +1,12 @@
-
+import { motion } from 'framer-motion';
 
 const DynamicList = () => {
     return (
-        <div>DynamicList</div>
+        <div>
+            <motion.div>
+
+            </motion.div>
+        </div>
     )
 }
 
