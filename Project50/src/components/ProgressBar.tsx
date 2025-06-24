@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 const ProgressBar = () => {
     const [isFilling, setIsFilling] = useState(false);
 
-    // Trigger animation on mount
+
     useEffect(() => {
         setIsFilling(true);
     }, []);
