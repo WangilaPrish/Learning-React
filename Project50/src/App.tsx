@@ -1,8 +1,11 @@
+import ProgressBar from "./components/ProgressBar"
 
 
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <ProgressBar />
+        </div>
     )
 }
 

@@ -1,8 +1,12 @@
-
+import { motion } from 'framer-motion';
 
 const ProgressBar = () => {
     return (
-        <div>ProgressBar</div>
+        <div>
+            <motion.div>
+
+            </motion.div>
+        </div>
     )
 }
 
