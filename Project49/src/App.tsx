@@ -1,8 +1,11 @@
+import ToggleSwitch from "./components/ToggleSwitch"
 
 
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <ToggleSwitch />
+        </div>
     )
 }
 
