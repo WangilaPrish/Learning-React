@@ -1,8 +1,11 @@
+import ToolTip from "./components/ToolTip"
 
 
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <ToolTip />
+        </div>
     )
 }
 
