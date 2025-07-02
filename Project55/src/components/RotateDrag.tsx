@@ -1,8 +1,12 @@
-
+import { motion } from 'framer-motion';
 
 const RotateDrag = () => {
     return (
-        <div>RotateDrag</div>
+        <div>
+            <motion.div>
+
+            </motion.div>
+        </div>
     )
 }
 
