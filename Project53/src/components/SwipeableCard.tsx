@@ -1,8 +1,12 @@
-import React from 'react'
+import { motion } from 'framer-motion';
 
 const SwipeableCard = () => {
     return (
-        <div>SwipeableCard</div>
+        <div>
+            <motion.div>
+
+            </motion.div>
+        </div>
     )
 }
 
