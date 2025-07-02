@@ -1,8 +1,12 @@
-
+import { motion } from 'framer-motion';
 
 const TaptochangeColor = () => {
     return (
-        <div>TaptochangeColor</div>
+        <div>
+            <motion.div>
+
+            </motion.div>
+        </div>
     )
 }
 
