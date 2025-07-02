@@ -1,4 +1,4 @@
-import React from 'react'
+
 import SwipeableCard from './components/SwipeableCard'
 
 const App = () => {
