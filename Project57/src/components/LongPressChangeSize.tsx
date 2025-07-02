@@ -1,24 +1,31 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 const LongPressToResize = () => {
     const [isLarge, setIsLarge] = useState(false);
+    const pressTimer = useRef<NodeJS.Timeout | null>(null);
+
+    const handleTapStart = () => {
+        // Start a 600ms timer when press begins
+        pressTimer.current = setTimeout(() => {
+            setIsLarge(true);
+        }, 600); // You can adjust this delay
+    };
+
+    const handleTapCancel = () => {
+        // Cancel the timer if press is released early
+        if (pressTimer.current) {
+            clearTimeout(pressTimer.current);
+            pressTimer.current = null;
+        }
+    };
 
     return (
         <div className="flex justify-center items-center h-screen bg-gray-100">
             <motion.div
-                onTapStart={() => {
-                    // Start timer when user presses
-                    this.pressTimer = setTimeout(() => setIsLarge(true), 500); // 500ms = long press
-                }}
-                onTapCancel={() => {
-                    // Cancel if user releases early
-                    clearTimeout(this.pressTimer);
-                }}
-                onTap={() => {
-                    // Optional: toggle back on normal tap
-                    setIsLarge(false);
-                }}
+                onTapStart={handleTapStart}
+                onTapCancel={handleTapCancel}
+                onTap={handleTapCancel} // Optional: ensure tap without long press doesn't trigger it
                 animate={{
                     width: isLarge ? 200 : 100,
                     height: isLarge ? 200 : 100,
