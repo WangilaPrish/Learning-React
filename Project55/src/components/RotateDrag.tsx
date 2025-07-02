@@ -1,15 +1,14 @@
-import { motion } from 'framer-motion';
+import { motion, useMotionValue, useTransform } from 'framer-motion';
 
 const RotateDrag = () => {
+    const x = useMotionValue(0);
+    const rotate = useTransform(x, [-100, 100], [-30, 30]); // maps x drag to -30° to 30°
+
     return (
         <div className="bg-teal-500 h-screen flex items-center justify-center">
             <motion.div
-                drag
-                dragConstraints={{ left: -100, right: 100, top: -100, bottom: 100 }}
-                onDrag={(e, info) => {
-                    const rotation = info.offset.x / 10; // Adjust this value for more or less rotation
-                    e.currentTarget.style.transform = `rotate(${rotation}deg)`;
-                }}
+                drag="x"
+                style={{ x, rotate }}
                 className="bg-white w-48 h-56 rounded-lg shadow-lg flex items-center justify-center"
             >
                 <p className="text-teal-700 font-semibold">Drag Me</p>
