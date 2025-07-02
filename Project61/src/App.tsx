@@ -1,8 +1,11 @@
-import React from 'react'
+import StaggeredButtonPress from "./components/StaggeredButtonPress"
+
 
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <StaggeredButtonPress />
+        </div>
     )
 }
 
