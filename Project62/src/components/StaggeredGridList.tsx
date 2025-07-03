@@ -1,29 +1,21 @@
-import { motion } from 'framer-motion';
-const StaggeredGridList = () => {
+import { motion } from "framer-motion";
+
+const items = Array.from({ length: 9 }, (_, i) => i + 1); // [1, 2, ..., 9]
+
+export default function StaggeredGrid() {
     return (
-        <div>
-            <motion.div>
+        <div className="grid grid-cols-3 gap-4">
+            {items.map((item, index) => (
                 <motion.div
-                    className="grid grid-cols-3 gap-4"
+                    key={item}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, staggerChildren: 0.2 }}
+                    transition={{ delay: index * 0.1 }} // 👈 Delay based on position
+                    className="p-4 bg-blue-500 text-white text-center rounded"
                 >
-                    {[...Array(9)].map((_, index) => (
-                        <motion.div
-                            key={index}
-                            className="bg-blue-500 h-32 flex items-center justify-center text-white"
-                            initial={{ scale: 0.8 }}
-                            animate={{ scale: 1 }}
-                            transition={{ duration: 0.3 }}
-                        >
-                            Item {index + 1}
-                        </motion.div>
-                    ))}
+                    {item}
                 </motion.div>
-            </motion.div>
+            ))}
         </div>
-    )
+    );
 }
-
-export default StaggeredGridList
