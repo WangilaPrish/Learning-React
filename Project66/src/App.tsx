@@ -1,8 +1,11 @@
+import SpringAnimatedPosition from "./components/SpringAnimatedPosition"
 
 
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <SpringAnimatedPosition />
+        </div>
     )
 }
 
