@@ -1,24 +1,38 @@
-import { motion, useMotionValue } from 'framer-motion';
-import useState from 'react';
+import { motion, useMotionValue, animate } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const SpringAnimatedPosition = () => {
-    const [x, setX] = useState(0);
     const x = useMotionValue(0);
+    const [currentX, setCurrentX] = useState(0);
 
     const clickBox = () => {
-        setX(x + 100);
-        x.set(x.get() + 100);
-    }
+        animate(x, x.get() + 100, {
+            type: 'spring',
+            stiffness: 300,
+            damping: 30
+        });
+    };
+
+    useEffect(() => {
+        const unsubscribe = x.on("change", (latest) => {
+            setCurrentX(latest);
+        });
+        return () => unsubscribe();
+    }, [x]);
+
     return (
-        <div>
-            <motion.div>
-                className="w-32 h-32 bg-blue-500"
+        <div className="w-full h-screen flex flex-col items-center justify-center gap-6">
+            <p className="text-lg font-semibold text-gray-700">
+                Position X: {currentX.toFixed(0)}px
+            </p>
+
+            <motion.div
+                className="w-32 h-32 bg-blue-500 rounded-lg cursor-pointer"
                 style={{ x }}
                 onClick={clickBox}
-                transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-            </motion.div>
+            />
         </div>
-    )
-}
+    );
+};
 
-export default SpringAnimatedPosition
+export default SpringAnimatedPosition;
