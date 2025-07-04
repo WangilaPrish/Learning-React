@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.perspective {
+    perspective: 1000px;
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+
+  .card-face {
+    @apply absolute w-full h-full flex items-center justify-center text-white text-2xl rounded-lg shadow-lg;
+    backface-visibility: hidden;
+  }
+
+  .front {
+    @apply bg-blue-500;
+  }
+
+  .back {
+    @apply bg-green-500;
+    transform: rotateY(180deg);
+  }
